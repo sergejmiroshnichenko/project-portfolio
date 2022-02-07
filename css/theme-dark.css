@@ -1,0 +1,244 @@
+
+:root {
+    --color-gold: #BDAE82;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+}
+
+html {
+    background-color: black;
+}
+
+.header__logo {
+    background-image: url('../assets/svg/vector.svg');
+}
+
+.header__logo:hover {
+    filter: saturate(100%) invert(1%) sepia(7%) saturate(1370%) hue-rotate(7deg) brightness(93%) contrast(85%);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.header__lang span {
+    color: var(--color-white);
+}
+
+/*** переключение языка */
+.header__lang-ru:hover{
+    color: var(--color-gold);
+}
+
+.header__lang-en:hover{
+    color: var(--color-gold);
+}
+
+.tabs__lang.active{
+    color: var(--color-gold)
+}
+
+.theme-icon:hover path{
+    fill: var(--color-gold);
+}
+
+
+.nav-list-link {
+    color: var(--color-white);
+}
+
+.nav-list-link:hover {
+    color: var(--color-gold);
+    transition: .3s;
+}
+
+.main .hero .hero-block h1 {
+    color: var(--color-white);
+}
+
+.hero {
+    background: url('../assets/img/header-bg.jpg');
+}
+
+.hero-desc {
+    color: var(--color-white);
+}
+
+.block-btn {
+    background-color: var(--color-gold);
+    color: #000000;
+}
+
+.block-btn:hover {
+    color: var(--color-white);
+}
+
+.section-title {
+    color: var(--color-gold);
+}
+
+.section-title:before {
+    background-color: var(--color-gold);
+}
+
+.section-title-inner {
+    background-color: black;
+}
+
+.skills {
+    background: #000000;
+}
+
+
+.skills-card {
+    color: var(--color-white);
+}
+
+.portfolio {
+    background: #000000;
+}
+
+.block-btn-empty {
+    background-color: transparent;
+    border: 2px solid var(--color-gold);
+    color: var(--color-gold);
+}
+
+.block-btn-empty.active {
+    background-color: var(--color-gold);
+    border: 2px solid var(--color-gold);
+    color: var(--color-black);
+}
+
+.block-btn-empty:hover {
+    color: var(--color-white);
+}
+
+.video {
+    background: #000000;
+}
+
+.video-player {
+    background: url('../assets/img/video-player.jpg');
+}
+
+.video-player-icon:hover path {
+    fill: var(--color-gold);
+}
+
+.price {
+    background: #000000;
+}
+
+.price-card {
+    border: 3px solid var(--color-gold);
+}
+
+.price-card-title {
+    color: var(--color-white);
+}
+
+.price-card-price {
+    color: var(--color-gold);
+}
+
+.price-card-description {
+    color: var(--color-white);
+}
+
+.contacts {
+    background-image: url("../assets/img/contacts.jpg");
+}
+
+.section-title .form-title {
+    background-color: var(--color-gold);
+}
+
+.contacts-input {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--color-gold);
+    color: var(--color-gold);
+}
+
+.contacts-input::placeholder {
+    color: var(--color-gold);
+}
+
+.contacts-textarea {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--color-gold);
+    color: var(--color-gold);
+}
+
+.footer .container {
+    background-color: var(--color-black);
+}
+
+.footer-data {
+    color: var(--color-white);
+}
+
+.footer__github {
+    color: var(--color-white);
+}
+
+.footer__github:hover {
+    color: var(--color-gold);
+}
+
+.footer__copyright {
+    color: var(--color-white);
+}
+
+.footer__copyright:hover {
+    color: var(--color-gold);
+}
+
+.social__icon:hover path {
+    fill: var(--color-gold);
+}
+
+/****************************************************** Media queries **************************************************/
+
+@media  (max-width: 768px) {
+
+    /**** header  ***/
+    .nav-menu._active {
+        background-color: var(--color-black);
+    }
+
+
+    .header-burger:hover::before,
+    .header-burger:hover::after,
+    .header-burger:hover span {
+        background: var(--color-gold);
+    }
+
+    .header-burger span,
+    .header-burger::before,
+    .header-burger::after {
+        background-color: var(--color-white);
+    }
+
+
+    .hero {
+        background-image: url('../assets/img/bg768.jpg');
+    }
+
+    .video-player {
+        background-image: url('../assets/img/video-playe768r.jpg');
+    }
+
+    .contacts {
+        background-image: url("../assets/img/contacts768.jpg");
+    }
+}
+
+.theme-icon[data-theme="dark"]{
+    display: none;
+}
+
+.theme-icon[data-theme="light"]{
+    display: block;
+}
