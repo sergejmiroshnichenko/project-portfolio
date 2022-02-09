@@ -10,4 +10,4 @@ _burger-menu_,
 
 _light/dark theme switching_, 
 
-_adaptive layout_,
+_adaptive layout_
